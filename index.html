@@ -1,24 +1,406 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 4 3º Secundaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4 3º Secundaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a combinar múltiples condiciones de entrada utilizando operadores lógicos (`and`, `or`) en MicroPython.</li>
+                                        <li>Que sean capaces de diseñar e implementar un sistema que tome decisiones más complejas basadas en la conjunción o disyunción de estados.</li>
+                                        <li>Que conceptualicen cómo los sistemas de Inteligencia Artificial utilizan la combinación de múltiples fuentes de datos y lógica compleja para tomar decisiones sofisticadas en el mundo real, sentando las bases para entender la complejidad en el 'razonamiento' de la IA.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en MicroPython que implementa un sistema de decisión complejo utilizando operadores lógicos (`and`, `or`) para combinar múltiples entradas y controlar salidas, demostrando el 'razonamiento' de la IA.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad.</li>
+                                        <li>Cuentas de alumno para las plataformas relevantes.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
+                                                <li>Tener kits Micro:bit v2 con IOTbit listos y organizados.</li>
+                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
+                                            <ul>
+                                                <li>Revisar el flujo de esta sesión, enfocándose en el uso de operadores lógicos `and`/`or` en MicroPython, su precedencia, y las implicaciones para la toma de decisiones compleja.</li>
+                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong>
+                                            <ul>
+                                                <li>Tener un Micro:bit con IOTbit programado con un ejemplo de lógica `and` o `or` (ej. LED que se enciende solo si A Y B se presionan) para una demostración inicial si es necesario.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Buenos días, equipo. Sus Micro:bits actúan, deciden y recuerdan. Hoy, darán un paso más hacia la inteligencia: les enseñaremos a tomar decisiones con **múltiples** condiciones. Imaginen un sistema de seguridad que activa una alarma solo si hay movimiento **y** es de noche. Esta es la esencia de la lógica compleja."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Navigator], y me interesa cómo los vehículos autónomos combinan información de sensores. Listo.'</strong> Confirmen haber recibido su saludo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy, sus sistemas combinarán múltiples condiciones. Los operadores lógicos `and` y `or` son clave para unir información y tomar decisiones más sofisticadas. Esto es la base para el 'razonamiento' de la IA. Piensen en un robot que fusiona sensores o un diagnóstico médico con múltiples pruebas. Esta lógica es crucial para la seguridad y la autonomía."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement"</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Combinar múltiples condiciones de entrada usando `and` y `or` en MicroPython, diseñar sistemas de decisión complejos, y conceptualizar cómo la IA usa esta lógica para decisiones sofisticadas.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
+                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender los operadores lógicos y su importancia en sistemas de IA complejos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo: <strong>'Xolo, explícame en detalle cómo funcionan los operadores lógicos `and` y `or` en Python, y por qué son indispensables para que la IA combine información de múltiples fuentes y tome decisiones complejas.'</strong> Presten atención a las analogías y ejemplos."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, analicen las explicaciones de Xolo. Si algo no les queda claro, pídanle que profundice. Por ejemplo: <strong>'Xolo, ¿cuál es el rol de `and` en la seguridad de un sistema de IA?'</strong> o <strong>'¿Cómo se usa `or` para la redundancia en sistemas críticos?'</strong> Reflexionen sobre cómo la IA usa estos operadores para fusionar datos y tomar decisiones complejas."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Con la potencia de `and` y `or` comprendida, aplicaremos estos operadores. Formen sus equipos de proyecto de **2 personas**. La colaboración en lógica compleja es clave."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
+                            <p>El equipo diseña una intención para un "Sistema de Acceso Seguro" con botones A/B y una condición combinada, describiéndola a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su desafío es diseñar una 'vibe' para un 'Sistema de Acceso Seguro' usando botones A y B, y condiciones combinadas con `and` o `or`. El sistema deberá usar LEDs o el buzzer. Describan su idea a Xolo con detalle. Ejemplo de input a Xolo: <strong>'Xolo, queremos que un LED P1 y un buzzer P0 se activen SOLO SI botón A *AND* botón B son presionados *simultáneamente*. Apagar al soltar.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Generación de Código por IA</h3>
+                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python basado en la "vibe" del equipo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
+<pre>
+# Importaciones necesarias para el Micro:bit y el tiempo
+
+from iotit import * # Importa funcionalidades básicas del Micro:bit
+
+import time
+
+from iotit import * # Para usar Pin en P0, P1, P8 si no son Micro:bit nativos
+
+# Definir pines para LED verde y buzzer
+
+led_verde = Pin(Pin.P1, Pin.OUT) # LED verde en P1 de la IOTbit
+
+buzzer = Pin(Pin.P0, Pin.OUT)   # Buzzer en P0 de la IOTbit
+
+# --- Configuración inicial del sistema ---
+
+def setup_sistema():
+
+    display.scroll("Sistema ARMADO") # Mensaje inicial de estado
+
+    led_verde.write_digital(0) # Asegurar que el LED esté apagado al inicio
+
+    buzzer.write_digital(0)   # Asegurar que el buzzer esté apagado al inicio
+
+    time.sleep(1)
+
+    display.clear()
+
+# Ejecutamos la configuración inicial una vez
+
+setup_sistema()
+
+# Bucle principal de control
+
+while True:
+
+    # Condición de activación: Ambos botones A y B presionados simultáneamente
+
+    if button_a.is_pressed() and button_b.is_pressed():
+
+        led_verde.write_digital(1) # Encender LED verde
+
+        buzzer.write_digital(1)    # Activar buzzer (sonido constante mientras se presiona)
+
+        # print("PROTOCOLO ACTIVO") # Opcional: para depuración en la consola
+
+    else:
+
+        led_verde.write_digital(0) # Apagar LED verde
+
+        buzzer.write_digital(0)    # Apagar buzzer
+
+        # print("Esperando activación...") # Opcional: para depuración en la consola
+
+
+    time.sleep_ms(50) # Pequeña pausa para evitar sobrecargar el procesador y asegurar lecturas
+</pre>
+<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
+                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su rol ahora es 'auditor de lógica'. Analicen el código. Pregúntenle a Xolo: <strong>'¿Cómo el operador `and` en la condición de activación garantiza seguridad?'</strong> o <strong>'¿Cómo cambiaría el comportamiento si usáramos `or`?'</strong> Discutan un escenario donde `or` sería más apropiado que `and`."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Implementen el código. Conecten LED verde a P1 y buzzer a P0. Carguen y prueben: solo A, solo B, y ambos a la vez. Si el sistema no reacciona como esperan (ej. no se apaga al soltar un botón), describan el problema a Xolo. Si Xolo les sugiere, pregunten: <strong>'Xolo, ¿qué es el 'debouncing' persistente y cómo lo corrijo?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "Think" (Individual)</h3>
+                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Individualmente, piensen: '¿Qué momento en su vida cotidiana usa lógica `AND` u `OR` para una decisión importante? ¿Cuál operador les parece más intuitivo y por qué?'"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "Pair" (Parejas)</h3>
+                            <p>Instrucciones para la discusión en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Ahora, discutan sus ejemplos. Debatan cuál es el más claro. ¿Encuentran situaciones donde `and` y `or` se entrelazan en una decisión?"</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "Share" (Grupo)</h3>
+                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Algunos equipos, compartan su ejemplo más interesante o una conclusión clave. ¿Qué les enseñó esta discusión sobre la complejidad de las decisiones?"</p>
+                            <p class="dialogue user"><strong>Equipo 1:</strong> "Pensamos en decidir ir a una fiesta. La lógica sería: 'Voy a la fiesta SI tengo permiso AND he terminado mis deberes'. Si una de las dos falla, no voy. El 'Y' es más estricto."</p>
+                            <p class="dialogue user"><strong>Equipo 2:</strong> "Mi ejemplo fue elegir qué comer. 'Quiero pedir pizza SI tengo dinero O mis amigos ya pidieron pizza'. Con el 'O', cualquiera de las dos opciones me sirve. Para mí, el 'Y' es más intuitivo porque lo usamos mucho para requisitos obligatorios."</p>
+                            <p class="dialogue user"><strong>Equipo 3:</strong> "Discutimos sobre un viaje en coche. 'Podemos salir SI el coche tiene gasolina SUFICIENTE AND los neumáticos están bien. PERO, podemos ir por la autopista OR por la carretera local si la autopista está congestionada'. Aquí se mezclan ambos para diferentes niveles de decisión."</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis Final</h3>
+                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Felicidades. Han programado sistemas con decisiones basadas en múltiples factores, replicando el 'razonamiento' de IAs. Comprendieron la diferencia crucial entre `and` y `or`, y cómo esto define la seguridad y funcionalidad. La habilidad de combinar condiciones es la puerta de entrada a la lógica de sistemas complejos y la 'fusión de datos' en IA. Dieron un paso fundamental hacia el diseño de 'cerebros' multidimensionales. La próxima sesión, sus sistemas se 'conectarán a la nube' para monitorear de forma remota, sentando las bases del IoT."</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
