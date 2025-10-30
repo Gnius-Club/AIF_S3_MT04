@@ -1,330 +1,332 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-S3-M04</title>
+    <title>Playbook: Sesión 4 - 3ro Secundaria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 4: El Decisor Lógico</strong></h1>
-        <div class="header-widgets">
-            <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle-input">
-                    <span class="slider round"></span>
-                </label>
-                <i class="fas fa-moon"></i>
+<header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 4 - 3ro Secundaria</strong></h1>
+    <div class="header-widgets">
+        <div class="timer-container">
+            <span id="timer">⏱️ 00:00</span>
+            <button id="startStop">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-input">
+                <span class="slider round"></span>
+            </label>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+    <aside class="activity-list">
+        <h2>Actividades</h2>
+        <ul>
+            <li><a href="#activity-0">📝</a></li>
+            <li><a href="#activity-1">1</a></li>
+            <li><a href="#activity-2">2</a></li>
+            <li><a href="#activity-3">3</a></li>
+            <li><a href="#activity-4">4</a></li>
+            <li><a href="#activity-5">5</a></li>
+        </ul>
+
+        <div class="sidebar-info">
+            <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+            <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+        <!-- SECCIÓN "DE UN VISTAZO" -->
+        <div class="activity-card" id="activity-0">
+            <h2><span class="book-icon">📝</span> De un Vistazo: El Decisor Lógico</h2>
+            <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+            <div class="overview-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
+                            <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Objetivos de aprendizaje:</strong>
+                                <p><strong>Objetivo general de la sesión:</strong> Que los estudiantes dominen el uso de operadores lógicos (`and`, `or`) en MicroPython para crear programas con toma de decisiones complejas, entendiendo su analogía con la fusión de datos en sistemas de IA.</p>
+                                <ul>
+                                    <li>Que los estudiantes aprendan a utilizar <strong>operadores lógicos</strong> (`and`, `or`) para crear <strong>condiciones complejas</strong> en <strong>MicroPython</strong>.</li>
+                                    <li>Que diseñen y generen un programa que tome decisiones basadas en una combinación de estados o entradas.</li>
+                                    <li>Que comprendan cómo la combinación de datos es análoga a la <strong>fusión de información</strong> en <strong>sistemas de IA</strong> para una <strong>toma de decisiones robusta</strong>.</li>
+                                </ul>
+                                <strong>Secuencia de Clase:</strong>
+                                <ul>
+                                    <li>⚡ <strong>Actividad 1:</strong> Saludo de IA y Contexto (3 min)</li>
+                                    <li>⚡ <strong>Actividad 2:</strong> "I Can Statement" y Presentación del Desafío (5 min)</li>
+                                    <li>⚡ <strong>Actividad 3:</strong> A.I. GYM (10 min)</li>
+                                    <li>⚡ <strong>Actividad 4:</strong> Brain Spark (22 min)</li>
+                                    <li>⚡ <strong>Actividad 5:</strong> Gnius STORM (5 min)</li>
+                                </ul>
+                                <strong>Entregable Clave:</strong>
+                                <ul>
+                                    <li>Un script funcional en <strong>MicroPython</strong> que utiliza <strong>operadores lógicos</strong> (`and` o `or`) para controlar una salida basándose en la evaluación simultánea de dos entradas (botones A y B).</li>
+                                    <li>Comprensión demostrada de la diferencia entre `and` y `or` y su impacto en el comportamiento del programa.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <strong>Materiales Específicos:</strong>
+                                <ul>
+                                    <li>Proyector o pantalla interactiva.</li>
+                                    <li>Conexión a internet estable.</li>
+                                    <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
+                                    <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                    <li>Presentación de la sesión (10 Diapositivas).</li>
+                                    <li>1 Micro:bit v2 con placa IOTbit (con zumbador) y cable USB por equipo de 2.</li>
+                                </ul>
+                                <strong>Preparación Previa para ESTA Sesión:</strong>
+                                <ol>
+                                    <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
+                                        <ul>
+                                            <li>Verificar la conexión a internet y el acceso a MakeCode.</li>
+                                            <li>Probar el chat "Agente Gnius" (Xolo).</li>
+                                            <li>Revisar que la presentación de diapositivas esté cargada y en orden.</li>
+                                            <li>Confirmar que todos los kits de hardware están completos y el zumbador funciona.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar la sintaxis y la tabla de verdad de los operadores lógicos `and` y `or` en Python. Estar preparado para discutir el concepto de fusión de datos.</li>
+                                    <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto 100% funcional de la "alarma de pánico" para demostrar el concepto y anticipar el desafío de la temporización al presionar los botones.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </header>
+        <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
 
-    <div class="main-container">
-        <aside class="activity-list">
-            <h2>Actividades</h2>
-            <ul>
-                <li><a href="#activity-0">📝</a></li>
-                <li><a href="#activity-1">1</a></li>
-                <li><a href="#activity-2">2</a></li>
-                <li><a href="#activity-3">3</a></li>
-                <li><a href="#activity-4">4</a></li>
-                <li><a href="#activity-5">5</a></li>
-            </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
-        </aside>
-
-        <main class="content">
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" -->
-            <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes aprendan a utilizar operadores lógicos (`and`, `or`) para crear condiciones complejas en MicroPython.</li>
-                                        <li>Que diseñen y generen un programa que tome decisiones basadas en una combinación de estados o entradas.</li>
-                                        <li>Que comprendan cómo la combinación de datos es análoga a la fusión de información en sistemas de IA para una toma de decisiones robusta.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
-                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
-                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
-                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un script funcional en MicroPython que utiliza operadores lógicos (`and` o `or`) para controlar una salida basándose en la evaluación simultánea de dos entradas (botones A y B).</li>
-                                        <li>Comprensión demostrada de la diferencia entre `and` y `or` y su impacto en el comportamiento del programa.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
-                                        <li>1 Micro:bit v2 con placa IOTbit (con zumbador) y cable USB por equipo de 2.</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar la conexión a internet y el acceso a MakeCode.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo).</li>
-                                                <li>Revisar que la presentación de diapositivas (1-10) esté cargada y en orden.</li>
-                                                <li>Confirmar que todos los kits de hardware están completos y el zumbador funciona.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar la sintaxis y la tabla de verdad de los operadores lógicos `and` y `or` en Python. Estar preparado para discutir el concepto de fusión de datos.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto 100% funcional de la "alarma de pánico" para demostrar el concepto y anticipar el desafío de la temporización al presionar los botones.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
-
-            <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Buenos días, ingenieros. Hasta ahora, nuestros sistemas deciden y recuerdan, pero basándose en una sola pregunta a la vez. El mundo real es más complejo. Hoy, enseñaremos a nuestros sistemas a pensar en 'Y' y en 'O', a evaluar múltiples factores antes de actuar.</p>
-                            </div>
+        <div class="activity-card" id="activity-1">
+            <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+            <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                        <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Buenos días, ingenieros. Hasta ahora, nuestros sistemas deciden y recuerdan, pero basándose en una sola pregunta a la vez. El mundo real es más complejo. Hoy, enseñaremos a nuestros sistemas a pensar en '<strong>Y</strong>' y en '<strong>O</strong>', a evaluar <strong>múltiples factores</strong> antes de actuar.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual, proporcionando a Xolo la información necesaria.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Como es habitual, inicien su sesión individual con Xolo. Recuérdenle su perfil de aprendizaje e interés personal. Por ejemplo: <strong>'Hola Xolo, soy Luis, perfil Ingeniero, me interesan los sistemas de automatización. Listo para la Misión 4.'</strong> Esto es clave para que Xolo personalice su apoyo. Procedan ahora.</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                        <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual, proporcionando a Xolo la información necesaria.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Como es habitual, inicien su sesión individual con Xolo. Recuérdenle su perfil de aprendizaje e interés personal. Por ejemplo: <strong>'Hola Xolo, soy Luis, perfil Ingeniero, me interesan los sistemas de automatización. Listo para la Misión 4.'</strong> Esto es clave para que Xolo personalice su apoyo. Procedan ahora.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
-                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío Conceptual</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de operadores lógicos como herramientas para la fusión de datos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El concepto central de hoy son los <strong>operadores lógicos</strong>: `and` y `or`. Estas no son solo palabras, son las herramientas que nos permiten fusionar diferentes fuentes de datos para tomar una decisión única y más inteligente. Un coche autónomo no frena solo porque ve un objeto; frena si ve un objeto Y el objeto está cerca Y se está moviendo hacia él. Esa lógica es la que construiremos hoy.</p>
-                            </div>
+        <div class="activity-card" id="activity-2">
+            <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+            <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Presentación del Desafío Conceptual</h3>
+                        <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de operadores lógicos como herramientas para la fusión de datos.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">El concepto central de hoy son los <strong>operadores lógicos</strong>: `and` y `or`. Estas no son solo palabras, son las herramientas que nos permiten <strong>fusionar diferentes fuentes de datos</strong> para tomar una decisión única y más inteligente. Un <strong>coche autónomo</strong> no frena solo porque ve un objeto; frena si ve un objeto <strong>Y</strong> el objeto está cerca <strong>Y</strong> se está moviendo hacia él. Esa <strong>lógica</strong> es la que construiremos hoy.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: "I Can Statement"</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Nuestra meta para hoy es precisa. Al finalizar, podrán afirmar: <strong>'Yo puedo usar los operadores lógicos `and` y `or` para crear condiciones complejas en Python, y puedo explicar cómo este proceso simula la fusión de datos en sistemas de IA.'</strong></p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: "I Can Statement"</h3>
+                        <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Nuestra meta para hoy es precisa. Al finalizar, podrán afirmar: <strong>'Yo puedo usar los operadores lógicos `and` y `or` para crear condiciones complejas en Python, y puedo explicar cómo este proceso simula la fusión de datos en sistemas de IA.'</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM (Trabajo Individual) ⏰ 10 minutos</h2>
-                <p>Facilitar una sesión de aprendizaje profundo e individual entre cada estudiante y Xolo para construir el andamiaje conceptual.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Instrucción para el Aprendizaje Personalizado</h3>
-                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su sesión de aprendizaje estructurada e individual con Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Iniciamos el A.I. GYM. De forma individual, su tarea es aprender acerca de operadores lógicos. Comiencen su diálogo con Xolo con este prompt: <strong>'Xolo, ¿qué hacen los operadores `and` y `or` en Python? ¿Cómo se relaciona esto con la fusión de datos en IA?'</strong></p>
-                            </div>
+        <div class="activity-card" id="activity-3">
+            <h2>⚡ Actividad 3: A.I. GYM (Trabajo Individual) ⏰ 10 minutos</h2>
+            <p>Facilitar una sesión de aprendizaje profundo e individual entre cada estudiante y Xolo para construir el andamiaje conceptual.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Instrucción para el Aprendizaje Personalizado</h3>
+                        <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su sesión de aprendizaje estructurada e individual con Xolo.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Iniciamos el A.I. GYM. De forma individual, su tarea es aprender acerca de operadores lógicos. Comiencen su diálogo con Xolo con este prompt: <strong>'Xolo, ¿qué hacen los operadores `and` y `or` en Python? ¿Cómo se relaciona esto con la fusión de datos en IA?'</strong></p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
-                            <p>El facilitador circula por el aula, supervisando el aprendizaje y sugiriendo preguntas de profundización.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras circula) "Veo que entienden la diferencia básica. Ahora, profundicen. Pregunten a Xolo: <strong>'Dame un ejemplo de código donde usar `and` es la única opción correcta, y otro donde `or` es la única opción.'</strong> O sobre la legibilidad: <strong>'¿Por qué usar `and` es considerado más legible que anidar dos `if`?'</strong> El objetivo es que puedan justificar la elección de un operador sobre otro."</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                        <p>El facilitador circula por el aula, supervisando el aprendizaje y sugiriendo preguntas de profundización.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">(Mientras circula) "Veo que entienden la diferencia básica. Ahora, profundicen. Pregunten a Xolo: <strong>'Dame un ejemplo de código donde usar `and` es la única opción correcta, y otro donde `or` es la única opción.'</strong> O sobre la legibilidad: <strong>'¿Por qué usar `and` es considerado más legible que anidar dos `if`?'</strong> El objetivo es que puedan justificar la elección de un operador sobre otro."</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Parejas) ⏰ 22 minutos</h2>
-                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en parejas, desde el diseño hasta la implementación.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Formación de Parejas e Instrucción</h3>
-                             <p>(Proyectar Diapositiva 6) El facilitador instruye a los alumnos a formar sus equipos de trabajo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Muy bien. Ahora, pasamos al modo colaborativo. Formen sus equipos de dos personas para el Brain Spark.</p>
-                            </div>
+        <div class="activity-card" id="activity-4">
+             <h2>⚡ Actividad 4: Brain Spark (Trabajo en Parejas) ⏰ 22 minutos</h2>
+            <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en parejas, desde el diseño hasta la implementación.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Formación de Parejas e Instrucción</h3>
+                         <p>(Proyectar Diapositiva 6) El facilitador instruye a los alumnos a formar sus equipos de trabajo.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Muy bien. Ahora, pasamos al modo colaborativo. Formen sus equipos de dos personas para el Brain Spark.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
-                            <p>(Proyectar Diapositiva 7) Las parejas diseñan su 'vibe', se la comunican a Xolo y reciben el código Python.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">En sus parejas, su desafío es diseñar un sistema que requiera lógica `and` u `or`. Piensen en una cerradura de seguridad que necesita dos botones, un sistema de alerta condicional, o un juego cooperativo. Diseñen la lógica y luego describan su 'vibe' a Xolo para que genere el código. Por ejemplo: <strong>'Xolo, queremos una alarma de pánico. Un zumbador debe sonar, pero solo si se presionan los botones A Y B al mismo tiempo.'</strong></p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                        <p>(Proyectar Diapositiva 7) Las parejas diseñan su 'vibe', se la comunican a Xolo y reciben el código Python.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                             <p class="dialogue assistant">En sus parejas, su desafío es diseñar un sistema que requiera lógica `and` u `or`. Piensen en una <strong>cerradura de seguridad</strong> que necesita dos botones, un <strong>sistema de alerta condicional</strong>, o un <strong>juego cooperativo</strong>. Diseñen la lógica y luego describan su 'vibe' a Xolo para que genere el código. Por ejemplo: <strong>'Xolo, queremos una alarma de pánico. Un zumbador debe sonar, pero solo si se presionan los botones A Y B al mismo tiempo.'</strong></p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Análisis y "Taming the Genie"</h3>
-                             <p>(Proyectar Diapositiva 8) Las parejas analizan el código, enfocándose en la condición lógica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Una vez que tengan el código, analícenlo. Enfóquense en la línea del `if`. Discutan: ¿Cuál es la diferencia fundamental entre escribir `if A and B:` y anidar dos `if`, uno dentro del otro? ¿Qué comunica mejor la intención? ¿Cómo cambiarían la condición para que la alarma se active con A O con B? Implementen y prueben su código.</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 3: Análisis y "Taming the Genie"</h3>
+                         <p>(Proyectar Diapositiva 8) Las parejas analizan el código, enfocándose en la condición lógica.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                             <p class="dialogue assistant">Una vez que tengan el código, analícenlo. Enfóquense en la línea del `if`. Discutan: ¿Cuál es la diferencia fundamental entre escribir `if A and B:` y anidar dos `if`, uno dentro del otro? ¿Qué comunica mejor la intención? ¿Cómo cambiarían la condición para que la alarma se active con A <strong>O</strong> con B? Implementen y prueben su código.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Debugging Colaborativo</h3>
-                            <p>(Proyectar Diapositiva 9) Se guía a las parejas para que trabajen con Xolo en la solución de problemas de temporización y lógica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Es posible que su alarma con `and` no funcione al primer intento. Si eso ocurre, no es un error de código, es un problema del mundo real: la temporización. Describan el problema a Xolo: <strong>'Xolo, nuestra alarma con `and` no suena nunca, aunque creemos que presionamos ambos botones.'</strong> Él los guiará para entender por qué la velocidad del procesador hace que esta condición sea difícil de cumplir y cómo se resolvería en un sistema profesional.</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 4: Debugging Colaborativo</h3>
+                        <p>(Proyectar Diapositiva 9) Se guía a las parejas para que trabajen con Xolo en la solución de problemas de temporización y lógica.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                             <p class="dialogue assistant">Es posible que su alarma con `and` no funcione al primer intento. Si eso ocurre, no es un error de código, es un problema del mundo real: la <strong>temporización</strong>. Describan el problema a Xolo: <strong>'Xolo, nuestra alarma con `and` no suena nunca, aunque creemos que presionamos ambos botones.'</strong> Él los guiará para entender por qué la <strong>velocidad del procesador</strong> hace que esta condición sea difícil de cumplir y cómo se resolvería en un sistema profesional.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
-                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual sobre el proceso.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar en una decisión compleja que hayan tomado recientemente que involucrara múltiples factores, ya sea un 'Y' lógico o un 'O' lógico.</p>
-                            </div>
+        <div class="activity-card" id="activity-5">
+            <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+            <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                        <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual sobre el proceso.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar en una decisión compleja que hayan tomado recientemente que involucrara múltiples factores, ya sea un '<strong>Y</strong>' lógico o un '<strong>O</strong>' lógico.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos comparten sus reflexiones con su compañero de equipo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos cómo el código que escribieron hoy es un modelo simple de ese tipo de pensamiento complejo del mundo real.</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
+                        <p>Los alumnos comparten sus reflexiones con su compañero de equipo.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos cómo el código que escribieron hoy es un modelo simple de ese tipo de <strong>pensamiento complejo</strong> del mundo real.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Gnius STORM (Share - Grupo)</h3>
-                            <p>Un portavoz de algunas parejas comparte un punto clave con la clase.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Finalmente, escuchemos de algunas parejas. Compartan un 'insight'. ¿Qué fue lo más desafiante o sorprendente de implementar la lógica combinada?</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 3: Gnius STORM (Share - Grupo)</h3>
+                        <p>Un portavoz de algunas parejas comparte un punto clave con la clase.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Finalmente, escuchemos de algunas parejas. Compartan un 'insight'. ¿Qué fue lo más desafiante o sorprendente de implementar la lógica combinada?</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Síntesis Final</h3>
-                            <p>El facilitador cierra la sesión con una reflexión que conecta la actividad con la visión del programa y el siguiente módulo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Excelente trabajo. Hoy han construido un sistema con una lógica de decisión más sofisticada. Han aprendido a fusionar múltiples fuentes de datos para una acción única, un principio absolutamente fundamental en la IA y la robótica. Con esto, han completado el primer módulo y dominan los fundamentos de la interacción local. Están listos para el siguiente gran paso: conectar nuestros sistemas al mundo exterior, a la nube, y comenzar a trabajar con datos del mundo real.</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 4: Síntesis Final</h3>
+                        <p>El facilitador cierra la sesión con una reflexión que conecta la actividad con la visión del programa y el siguiente módulo.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Excelente trabajo. Hoy han construido un sistema con una lógica de decisión más sofisticada. Han aprendido a <strong>fusionar múltiples fuentes de datos</strong> para una acción única, un principio absolutamente fundamental en la <strong>IA</strong> y la <strong>robótica</strong>. Con esto, han completado el primer módulo y dominan los fundamentos de la interacción local. Están listos para el siguiente gran paso: conectar nuestros sistemas al mundo exterior, a la <strong>nube</strong>, y comenzar a trabajar con <strong>datos del mundo real</strong>.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
